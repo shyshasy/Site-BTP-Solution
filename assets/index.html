@@ -14,7 +14,7 @@
         <ul class="nav-links">
            <li> <a class="hom" href="#home">Accueil</a></li>
            <li> <a href="#services">Services</a></li> 
-            <li><a href="#À propos">À propos</a></li>
+            <li><a href="#Apropos">À propos</a></li>
             <li><a href="#Contact"> Contact</a></li> 
            
         </ul>
@@ -23,7 +23,7 @@
      </nav>
         </header>
         
-        <Section class="hero">
+        <Section class="hero" id="home">
             
             <div class="premier">
                 <h1>Construisons ensemble des infrastructures durables avec BTP Solutions</h1>
@@ -31,11 +31,11 @@
                 <h2>Qualité</h2>
                 <h2>innovation</h2>
                 <h2>au service de vos projets</h2>  
-                <button> Contactez-nous</button> 
+               <a href="#Contact"> <button> Contactez-nous </button> </a>
 
             </div>
         </Section>
-        <section class="service">
+        <section class="service" id="services">
             <h1>Nos Services</h1>
             <div class="nos-service">
                 <div class="serv1">
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </section>
-        <section class="apropos">
+        <section class="apropos" id="Apropos">
             <h1>À propos de BTP Solutions</h1>
             <div class="Apropos-BTP">
                 <div class="descript">
@@ -85,14 +85,14 @@
                 </div>
             </div>
         </section>
-        <h1>Contactez-nous</h1>
-        <section class="contact">
-           
+        
+        <section class="contact" id="Contact">
+            <h1>Contactez-nous</h1>
             <section class="form-contact">
                 <form action="#" method="post">
                     <div class="form-group">
                         <label for="name">Nom:</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name"  pattern="[^0-9]*" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
