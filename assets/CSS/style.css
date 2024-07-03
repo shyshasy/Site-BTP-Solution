@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
     
  }
 
@@ -18,12 +19,15 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #0c2c43;
+   
     
 }
 
 header{
     width: 100%;
-    
+    z-index:111111111;
+    top: 0;
+    position: sticky;
 
 }
 
@@ -98,12 +102,14 @@ margin-top: 40px;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    text-align: center;
 }
 .service h1 {
     font-weight: bold;
-    text-align: center;
+    text-align: left;
      font-size: 30px;
      margin-bottom: 50px;
+     align-items: center;
 }
 
 
@@ -143,16 +149,23 @@ margin-top: 40px;
 }
 
 .serv1 p, .serv2 p, .serv3 p {
+    text-align: left; /* Aligne le texte à gauche */
+    margin: 0; 
+    padding: 0;
     margin-bottom: 0;
 }
 .apropos {
     padding: 20px;
+    text-align: center;
+    align-items: center;
     text-align: center;
 }
 
 .apropos h1 {
     font-weight: bold;
     margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
 }
 
 .Apropos-BTP {
@@ -160,20 +173,25 @@ margin-top: 40px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto; /* Centre le conteneur horizontalement */
+    max-width: 1500px;
+    margin: 0 auto; 
 }
 
 .descript {
 
     flex: 1;
     padding: 20px;
-    text-align: left; /* Aligne le texte à gauche */
+    text-align: left; 
+    position: relative; 
+    transform: translateY(-130px);
+    
+
 }
 .descript p{
     padding: 40px;
     width: 100%;
     font-size: 19px;
+    text-align: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -188,8 +206,7 @@ margin-top: 40px;
 
 .img-equipe img {
     width: 100%;
-    max-width: 450px; /* Augmente la taille maximale de l'image */
-    height: auto;
+    max-width: 450px; 
     border-radius: 10%;
     margin-bottom: 30px;
 }
@@ -213,6 +230,7 @@ p {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    
 }
 
 .client > div {
@@ -229,18 +247,16 @@ p {
 .client img {
     width: 100%;
     height: auto;
-    max-height: 200px; /* Limite la hauteur de l'image */
-    object-fit: contain; /* S'assure que l'image ne soit pas coupée */
+    max-height: 200px; 
+    object-fit: contain; 
 }
 
 .client p {
+    text-align: left; 
+    margin: 0; 
+    padding: 0;
     margin-top: 20px;
     margin-bottom: 0;
-}
-
-.contact {
-    display: flex;
-
 }
 
 .contact {
@@ -259,6 +275,16 @@ p {
     font-weight: bold;
     margin-bottom: 20px;
 }
+.contact p {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-left: 110px;
+    
+
+}
+
+
 
 .form-contact {
     display: flex;
@@ -267,6 +293,7 @@ p {
     gap: 30px;
     width: 100%;
     max-width: 1200px;
+  
     margin: 0 auto;
 }
 
@@ -350,8 +377,10 @@ iframe {
 .footer {
     background-color: #0c2c43;
     color: white;
+    margin: 0%;
     padding: 20px 0;
     text-align: center;
+    width: 100%; /* Ajout de cette ligne */
 }
 
 .footer-container {
@@ -366,6 +395,7 @@ iframe {
 .footer-container > div {
     flex: 1;
     padding: 10px;
+    
 }
 
 .legal-info h2,
@@ -401,13 +431,14 @@ iframe {
     vertical-align: middle;
 }
 
-.social-links a:hover img {
-    opacity: 0.7;
-}
 .toggle_menu{
     display: none;
 }
+
 @media (max-width:772px) {
+    body{
+        overflow-x: hidden;
+    }
     header nav .nav-links {
         display: none;
     }
@@ -460,13 +491,13 @@ iframe {
         top: 50px;
         right: 0;
         width: 70%;
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: center;
-        background-color: #0c2c43; 
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+         background-color: #0c2c43;  
+         box-shadow: 0 0 10px rgba(0,0,0,0.1); 
         flex-direction: column;
-        height: 80%;
+        height: auto;
     }
     header nav .nav-links.responsive li {
         margin: 15px 0;
@@ -492,7 +523,7 @@ iframe {
       .serv1, .serv2, .serv3 {
 
         width: 100%;
-        min-width: 50%;
+        min-width: 70%;
         height: auto;
     
 
@@ -501,6 +532,21 @@ iframe {
       .Apropos-BTP{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+      }
+      .apropos h1 {
+         margin-bottom: 60px; 
+        text-align: center;
+        align-items: center;
+
+      }
+      .img-equipe {
+        position: relative; 
+        transform: translateY(-120px);
+        
 
       }
       .client {
@@ -509,12 +555,28 @@ iframe {
         justify-content: center;
         align-items: center;
         text-align: center;
+       
+        
+        
         
 
       }
+      .temoignage{
+        position: relative; 
+        transform: translateY(-110px);
+
+      }
+      
       .client > div {
-        min-width: 50%;
+        min-width: 70%;
         
+        
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       .form-contact {
 
@@ -524,8 +586,17 @@ iframe {
         justify-content: center;
          align-items: center; 
         text-align: center;
-        
+        position: relative; 
+        /* transform: translateY(-190px); */
 
+      }
+      
+      
+      .contact h1 {
+        position: relative; 
+        /* transform: translateY(-140px); */
+
+        
       }
       form {
         min-width: 90%;
