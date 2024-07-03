@@ -502,6 +502,10 @@ iframe {
     header nav .nav-links.responsive li {
         margin: 15px 0;
     }
+    .contact{
+        transform: translateY(-110px);
+
+    }
     .premier button {
         width: 50%; 
         height: auto;
