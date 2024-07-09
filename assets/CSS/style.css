@@ -266,30 +266,27 @@ p {
 
 .contact {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 100%;
     height: auto;
     flex-direction: column;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px; 
 }
 
 .contact h1 {
     font-weight: bold;
     margin-bottom: 20px;
 }
-.contact p {
-    width: 100%;
+
+
+
+.cordonner{
+     text-align: start; 
     display: flex;
-    justify-content: start;
-    margin-left: 11.5%; 
-    
-
+    flex-direction: column;
+    width: 100%;
+    margin-left: 6%;
 }
-
-
 
 .form-contact {
     display: flex;
