@@ -284,11 +284,11 @@ p {
      text-align: start; 
     display: flex;
     flex-direction: column;
-      width: 89%;  
-     /* margin-left: 75px;   */
+    width: 89%;    
      box-sizing: border-box;
-     
-     margin: auto;
+     margin: 0 auto;
+     max-width: 100%; 
+     overflow: hidden; 
 }
 
 .form-contact {
