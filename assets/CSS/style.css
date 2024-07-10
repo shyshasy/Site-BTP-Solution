@@ -623,10 +623,13 @@ iframe {
         margin: 5px;
     }
     .cordonner{
-        margin-left: 75px; 
+        width: 89%;    
         box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 100%; 
+        overflow: hidden; 
       }
-
+}
     
    
     
