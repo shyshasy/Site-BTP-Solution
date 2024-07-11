@@ -289,15 +289,18 @@ p {
      margin: 0 auto;
      max-width: 100%; 
      overflow: hidden; 
+     padding: 0 23px;
 }
-
+#form-contact{
+    width: 100%;
+}
 .form-contact {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    /* align-items: flex-start; */
+    justify-content: space-between;
     gap: 30px;
-    width: 100%;
-    max-width: 1200px;
+    width: 89%;
+    /* max-width: 1200px; */
   
     margin: 0 auto;
 }
@@ -375,7 +378,7 @@ button:hover {
 
 iframe {
     width: 50%;
-    height: 450px;
+    height: 520px;
     border-radius: 8px;
     border: 0;
 }
